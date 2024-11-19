@@ -1,0 +1,19 @@
+{
+	"folders": [
+		{
+			"path": "../norvideo"
+		},
+		{
+			"path": "../java"
+		},
+		{
+			"path": "../sirt"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "java"
+	}
+}

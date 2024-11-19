@@ -1,0 +1,30 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  
+}
+.nkar{
+    width: 1519px; 
+    height: 800px;
+    background-image: url(https://www.w3schools.com/w3images/hamburger.jpg);
+}
+h1{
+  font-size: 4rem;
+    padding-top:700px;
+}
+.xndzor{
+    background-image: url(https://www.w3schools.com/w3images/tablesetting2.jpg);
+    width: 600px;
+    height: 750px;
+    /* margin-top: 100px;
+    margin-left: 200px; */
+    display:inline-block;
+}
+.uteliqtext{
+    width: 500px;
+    height: 750px;
+    border: solid 5px black;
+   display:inline-block;
+    
+}

@@ -1,0 +1,39 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+#mec {
+    width: 100%;
+    height: 110vh;
+    display: flex;
+}
+
+section {
+    width: 40%;
+    height: 100vh;
+    display: grid;
+    margin-left: 50px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+}
+
+.vandak {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    border: solid 1px black;
+}
+
+#pat {
+    width: 10%;
+    height: 40vh;
+    display: flex;
+    flex-direction: column;
+}
+
+h1 {
+    display: flex;
+}

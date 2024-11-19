@@ -1,0 +1,39 @@
+from telegram.ext import Updater, CommandHandler
+import logging
+
+# Telegram bot token - replace this with your bot's token
+TOKEN = 'YOUR_TELEGRAM_BOT_TOKEN'
+
+# Configure logging
+logging.basicConfig(format='%(asctime)s - %(name)s - %(levelname)s - %(message)s', level=logging.INFO)
+logger = logging.getLogger(__name__)
+
+# Define the start command
+def start(update, context):
+    context.bot.send_message(chat_id=update.effective_chat.id, text="I'm here to express love! Sending 1000 'I love you'...")
+
+    # Send 'I love you' 1000 times
+    for i in range(1000):
+        context.bot.send_message(chat_id=update.effective_chat.id, text="I love you")
+
+# Define the main function
+def main():
+    # Create the Updater and pass it your bot's token
+    updater = Updater(TOKEN, use_context=True)
+
+    # Get the dispatcher to register handlers
+    dp = updater.dispatcher
+
+    # Add command handler for the /start command
+    dp.add_handler(CommandHandler("start", start))
+
+    # Start the Bot
+    updater.start_polling()
+    logger.info("Bot started")
+
+    # Run the bot until you press Ctrl-C
+    updater.idle()
+
+if __name__ == '__main__':
+    main()
+

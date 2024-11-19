@@ -1,0 +1,61 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+section {
+    width: 100%;
+    height: 80vh;
+    border: solid 1px black;
+    display: flex;
+}
+
+.obshi {
+    width: 33%;
+    height: 100%;
+    border: solid 1px black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+#content {
+    width: 60%;
+    height: 5vh;
+  
+}
+
+#width {
+    width: 20%;
+    height: 5vh;
+  
+}
+#height {
+    width: 20%;
+    height: 5vh;
+ 
+}
+#color {
+    width: 10%;
+    height: 5vh;
+  
+}
+
+#bgcolor {
+    width: 10%;
+    height: 5vh;
+  
+}
+#knopka{
+    width: 50%;
+    height: 10vh;
+    margin-top: 40px;
+}
+#knopka1{
+    width: 50%;
+    height: 10vh;
+   
+}
